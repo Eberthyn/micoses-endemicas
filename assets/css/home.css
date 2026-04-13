@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+@font-face {
+  font-family: "Prelo Book";
+  src: url(../fonts/Prelo-Book.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Prelo Bold";
+  src: url(../fonts/Prelo-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Oleo Script";
+  src: url(../fonts/OleoScript-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto_Condensed-Bold.ttf);
+}
+
+body {
+  font-family: "Prelo Book", sans-serif;
+  margin: 0;
+  color: #fff;
+  font-size: 18px !important;
+  letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Prelo Bold";
+}
+
+.header {
+  padding: 30px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.header-shape-left {
+  position: absolute;
+  max-height: 50%;
+  max-width: 50%;
+  top: 0;
+  left: 0;
+}
+
+.header-shape-right {
+  position: absolute;
+  max-height: 60%;
+  max-width: 60%;
+  top: 0;
+  right: 0;
+}
+
+.illustration {
+  width: 38%;
+  height: auto;
+}
+
+.header-text {
+  max-width: 600px;
+}
+
+.header h1 {
+  font-size: 60px;
+  margin: 0;
+  line-height: 1;
+  font-family: "Oleo Script" !important;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.content {
+  padding: 40px 18%;
+  text-align: center;
+}
+
+.menu-list {
+  padding: 0 !important;
+}
+
+.video-placeholder {
+  background: #ddd;
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  margin: auto;
+}
+
+.decorative-flowers {
+  max-width: 12% !important;
+  display: block;
+  margin: auto;
+}
+
+.course-structure {
+  padding-top: 40px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 40px;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.modules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.module {
+  padding: 20px;
+  margin: 10px;
+  width: calc(33% - 40px);
+  max-width: 320px;
+  max-height: auto;
+  border: 1px dashed #fff;
+  position: relative;
+}
+
+.module-text {
+  font-family: "Prelo Bold", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: start !important;
+}
+
+.soon-tag {
+  background: #c04caf;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.coming-soon {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.module img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.start-button {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c900ab;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 40px;
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer img {
+  /* width: 240px; */
+  margin: 10px;
+}
+
+.modal-content {
+  padding: 1rem 3rem;
+  color: black;
+}
+
+.modal-content a {
+  color: black;
+  text-decoration: underline;
+}
+/* .modal-header .close {
+  padding: 1rem;
+  margin: -2rem -4rem -1rem auto;
+} */
+
+.modal-footer button {
+  background-color: #c04caf;
+}
+
+#modalCreditos,
+#modalReferencias {
+  #botaoComecar {
+    border: none;
+  }
+
+  #botaoComecar:hover {
+    background-color: #783566;
+  }
+}
+
+@media (max-width: 980px) {
+  .accordion {
+    padding: 0 !important;
+  }
+
+  .decorative-flowers {
+    margin-top: 50px;
+    max-width: 20% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .header-text {
+    padding-left: 0;
+    max-width: none;
+  }
+
+  .header h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .header h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .illustration {
+    width: 50%;
+    max-width: 200px;
+    margin-top: 20px;
+  }
+
+  .header-shape-left {
+    max-height: 40%;
+    max-width: 40%;
+  }
+
+  .header-shape-right {
+    max-height: 60%;
+    max-width: 60%;
+  }
+
+  .decorative-flowers {
+    margin-top: 50px;
+    max-width: 38% !important;
+  }
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .module,
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .module {
+    width: calc(100% - 40px);
+  }
+
+  .header-shape-left {
+    max-height: 40%;
+    max-width: 40%;
+  }
+
+  .header-shape-right {
+    max-height: 40%;
+    max-width: 40%;
+  }
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+li:nth-child(1) {
+  margin-right: 12px;
+}
+
+a.tituloLista {
+  margin: 0px;
+  font-weight: bold;
+  color: white;
+}
+
+.sectionTitle i {
+  margin: 5px;
+}
+
+/* Accordions */
+.card {
+  border: 0px;
+  position: relative;
+}
+
+.card-header a:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.card-header {
+  border-width: 1px;
+  border-color: #c4c4c4;
+  background-color: white;
+}
+
+.card-header p {
+  color: #c04caf;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.accordion {
+  padding: 1rem 3rem;
+  margin-bottom: 30px;
+}
+
+.card-body ul li {
+  list-style: none;
+}
+
+.accordionMenu .collapsed i:before {
+  content: "\f0d7";
+}
+
+.accordion .collapsed i::before {
+  content: "\f067";
+}
+
+.imagem .accordion .collapsed i::before {
+  content: "\f078";
+}
+
+#modalReferencias {
+  .card-body h1 {
+    font-size: 18px;
+  }
+}
+
+/* 1) mantém só o fade, tira o translate slide */
+.modal.fade .modal-dialog {
+  /* elimina o deslocamento vertical */
+  transform: none !important;
+  /* opcional: controla velocidade do fade no dialog */
+  transition: opacity 0.3s ease-out !important;
+}
+
+/* 2) o próprio .modal (backdrop + container) já faz o fade de opacidade,
+   mas se quiser afinar a haste do conteúdo: */
+.modal.fade .modal-content {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+}
+
+.folder {
+  /* Gradiente mais claro para o topo */
+  background: linear-gradient(to bottom, #c100a4 0%, #c100a4 30%, #730162 100%);
+  color: #fff;
+}
+
+.apresentacao {
+  /* Gradiente mais escuro a partir daqui */
+  background: linear-gradient(to bottom, #c100a4 0%, #c100a4 10%, #730162 100%);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 0.5rem !important;
+  }
+}
+
+.menuSuperior {
+  padding: 30px 0 10px 0 !important;
+}
+
+.card-content {
+  flex-grow: 1;
+}

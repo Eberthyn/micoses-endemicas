@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Leishmaniose</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 34px;
+        }
+
+        header {
+            padding-bottom: 0px !important;
+
+            & .row {
+                padding: 0px;
+            }
+        }
+
+        #menuLateral {
+            padding-left: 0px !important;
+        }
+
+        .menuHome {
+            position: absolute;
+            border: none;
+            color: white;
+            background-color: #35637F;
+            padding: 0px !important;
+            margin-left: 66%;
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            height: 42px;
+            z-index: 2;
+        }
+
+        .botaoMenuHome {
+            padding: 5px 15px 5px 15px;
+        }
+
+        .menuLateralHome {
+            padding-left: 8px;
+        }
+
+        @media (min-width: 980px) {
+            .menuLateralHome {
+                display: none;
+            }
+        }
+
+        @media (max-width: 980px) {
+            .menuHome {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            .menuHome {
+                margin-left: 60%;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            .menuHome {
+                margin-left: 55%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .menuHome {
+                margin-left: 45%;
+            }
+        }
+
+        .imagem-rotacionavel {
+            transform: rotate(0deg);
+            transition: transform 0.5s ease;
+        }
+
+        @media (max-width: 760px) {
+            .imagem-rotacionavel {
+                transform-origin: top left;
+                transform: rotate(90deg) translateY(5%);
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Toolbar -->
+    <header>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Curso</h1>
+                <h2><b>Princípios básicos <br> do diagnóstico das </b></h2>
+                <h1>Micoses <br> Endêmicas</h1>
+
+                <div class="button">Saiba Mais</div>
+
+                <div><img src="assets/images/home/icone.png" alt=""></div>
+                <div class="col-md-2">
+                    <a href="creditos.html">
+                        <i class="fas fa-list"></i>
+                        <b>Créditos</b>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="referencias.html">
+                        <i class="fas fa-file-alt"></i>
+                        <b>Referências</b>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img src="assets/images/home/imgCapa.png" class="img-fluid" alt="Capa do curso">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="">
+        <!-- Apresentação -->
+        <div class="col-md-12" id="content">
+            <div class="conteudo" style="padding-bottom: 50px !important;">
+                <h1 class="text-center" style="color:  #3A5C51;">APRESENTAÇÃO</h1>
+
+                <p>Olá, seja bem-vindo(a) ao curso de<b> Princípios básicos do diagnóstico das micoses endêmicas.</b>
+                </p>
+
+                <p>Hoje, um sonho de décadas do Laboratório de Referência Nacional em Micoses Sistêmicas do Instituto
+                    Nacional de Infectologia Evandro Chagas da Fundação Oswaldo Cruz (Fiocruz), criado pelo nosso mestre
+                    e amigo Dr. Bodo Wanke, está sendo realizado graças ao esforço conjunto da Coordenação Geral de
+                    Vigilância de Tuberculose, Micoses Endêmicas e Micobactérias não Tuberculosas/Departamento de
+                    HIV/AIDS, Tuberculose, Hepatites Virais e Infecções sexualmente Transmissíveis/Secretaria de
+                    Vigilância em Saúde e Ambiente do Ministério da Saúde, da Coordenação de Vigilância em Saúde em
+                    Laboratórios de Referência da Presidência da Fiocruz e de todos os nossos colaboradores, que se
+                    uniram a nós para que este curso, tão necessário em nosso país, fosse concretizado.</p>
+
+                <p>Este é um curso autoinstrucional destinado a profissionais que atuam, ou pretendem atuar, em
+                    laboratórios no diagnóstico de micoses, e a todos que desejam se aprofundar no tema. Tem por
+                    finalidade apresentar conceitos, técnicas e procedimentos fundamentais para a correta realização do
+                    diagnóstico laboratorial dessas doenças, garantindo qualidade e segurança às atividades realizadas e
+                    contribuindo para as ações de atenção e vigilância em Saúde Pública no Brasil.</p>
+
+                <p>Ao longo do curso você terá a oportunidade de desenvolver habilidades e competências essenciais para
+                    o diagnóstico laboratorial básico das micoses de relevância em Saúde Pública, compreendendo sua
+                    importância no contexto epidemiológico nacional e reconhecendo o papel estratégico do diagnóstico
+                    precoce e preciso para a melhoria do manejo clínico e para a prevenção de complicações.</p>
+
+                <p>No Brasil, apesar de a maioria das doenças fúngicas não ser de notificação compulsória, elas
+                    representam um desafio significativo para a Saúde Pública, tanto pelo potencial incapacitante quanto
+                    pela alta taxa de morbimortalidade associada a diagnósticos e a tratamentos tardios. Assim,
+                    compreender e aplicar as técnicas apresentadas neste curso poderá fazer diferença direta na
+                    sobrevida e qualidade de vida dos pacientes.</p>
+
+                <p>Organize sua agenda de estudos e aproveite os conteúdos no seu ritmo. Reflita, pratique, explore os
+                    materiais complementares e, principalmente, conecte o aprendizado com a sua prática profissional.
+                </p>
+
+                <p><b>Bons estudos!</b></p>
+
+                <div class="row">
+                    <div class="col-md-4" style="background-color: #38584E; padding-top: 30px;">
+                        <h1><b>Estrutura</b></h1>
+                        <img src="assets/images/home/icones2.png" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="col-md-4"
+                            style="display: flex; justify-content: flex-end; align-items: flex-start; padding-right: 32px !important;">
+                        </div>
+                        <div class="col-md-8">
+                            <span style="text-transform: uppercase;"><b>Módulo 1<br>
+                                    Vigilância Epidemiológica
+                                </b></span>
+                            <ul style="padding: 0;">
+                                <li class="icon circle"><a href="modulo1/modulo1-aula1.html" style="color: black;">Aula
+                                        1.1
+                                        – Introdução às Leishmanioses, epidemiologia e controle da
+                                        doença.</a></li>
+                                <li class="icon circle"><a href="modulo1/modulo1-aula2.html" style="color: black;">Aula
+                                        1.2
+                                        – Vigilância epidemiológica e os métodos de vigilância –
+                                        Importância da visão de Uma Só Saúde no controle da transmissão.</a></li>
+                            </ul>
+
+
+                            <span style="text-transform: uppercase;"><b>Módulo 2<br>
+                                    Vigilância Vetorial e aspectos ecoepidemiológicos
+                                </b></span>
+                            <ul style="padding: 0;">
+                                <li class="icon circle"><a href="modulo2/modulo2-aula1.html" style="color: black;">Aula
+                                        2.1
+                                        – Principais espécies de flebotomíneos e ciclo biológico do
+                                        vetor.</a></li>
+                                <li class="icon circle"><a href="modulo2/modulo2-aula2.html" style="color: black;">Aula
+                                        2.2
+                                        – Ferramentas digitais para a identificação de
+                                        flebotomíneos e
+                                        a importância da vigilância entomológica.</a></li>
+                                <li class="icon circle"><a href="modulo2/modulo2-aula3.html" style="color: black;">Aula
+                                        2.3
+                                        – Principais reservatórios, as diferentes espécies de
+                                        <i>Leishmania</i> e sua distribuição geográfica.</a></li>
+                                <li class="icon circle"><a href="modulo2/modulo2-aula4.html" style="color: black;">Aula
+                                        2.4
+                                        – Leishmanioses e sua distribuição geográfica- fatores
+                                        socioambientais associados às leishmanioses tegumentar e visceral.</a></li>
+                            </ul>
+
+
+                            <span style="text-transform: uppercase;"><b>Módulo 3<br>
+                                    Patogênese e Diagnóstico das leishmanioses visceral e cutânea
+                                </b></span>
+                            <ul style="padding: 0;">
+                                <li class="icon circle"><a href="" style="color: black;">Aula 3.1 – Diagnóstico clínico
+                                        e o
+                                        contexto no SUS.</a></li>
+                                <li class="icon circle"><a href="" style="color: black;">Aula 3.2 – Diagnóstico
+                                        diferencial
+                                        das leishmanioses.</a></li>
+                                <li class="icon circle"><a href="" style="color: black;">Aula 3.3 – Imunopatogênese das
+                                        leishmanioses.</a></li>
+                            </ul>
+
+                            <span style="text-transform: uppercase;"><b>Módulo 4<br>
+                                    Tratamento das Leishmanioses visceral e cutânea
+                                </b></span>
+                            <ul style="padding: 0;">
+                                <li class="icon circle"><a href="" style="color: black;">Aula 4.1 – Abordagem atual do
+                                        tratamento da leishmaniose tegumentar.</a>
+                                </li>
+                                <li class="icon circle"><a href="" style="color: black;">Aula 4.2 – Abordagem atual do
+                                        tratamento da leishmaniose visceral.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Objetivos do curso</h3>
+                <ul>
+                    <li class="icon circle">Apresentar as doenças fúngicas de relevância em Saúde Pública no Brasil e no
+                        mundo.</li>
+                    <li class="icon circle">Relacionar e diferenciar os principais agentes etiológicos das micoses de
+                        relevância em Saúde Pública no
+                        país no Brasil e no mundo.</li>
+                    <li class="icon circle">Descrever a biologia, incluindo estrutura de reprodução, dos principais
+                        agentes etiológicos das micoses
+                        de relevância em Saúde Pública no país e no mundo.</li>
+                    <li class="icon circle">Identificar os principais tipos de amostras utilizadas no diagnóstico de
+                        micoses.</li>
+                    <li class="icon circle">Descrever técnicas corretas de coleta, transporte e armazenamento para
+                        garantir a qualidade da amostra.</li>
+                    <li class="icon circle">Executar procedimentos de processamento, incluindo preparo de reagentes,
+                        meios de cultura e
+                        simulações práticas.</li>
+                    <li class="icon circle">Selecionar e utilizar adequadamente meios de cultura e tipos de coloração.
+                    </li>
+                    <li class="icon circle">Realizar e descrever exames diretos, culturas, testes de suscetibilidade a
+                        antifúngicos, exames
+                        histopatológicos e imunoensaios.</li>
+                    <li class="icon circle">Conhecer e aplicar os testes convencionais de suscetibilidade utilizados no
+                        Brasil.</li>
+                    <li class="icon circle">Interpretar resultados laboratoriais.</li>
+                    <li class="icon circle">Reconhecer a importância da biossegurança no diagnóstico laboratorial de
+                        micoses./li>
+                    <li class="icon circle">Identificar métodos e práticas de biossegurança, níveis de risco biológico e
+                        equipamentos de proteção
+                        individual e coletiva.</li>
+                    <li class="icon circle">Avaliar riscos inerentes às atividades laboratoriais e adotar procedimentos
+                        adequados em casos de
+                        acidentes ou emergências.</li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="col-md-4"
+                            style="display: flex; justify-content: flex-end; align-items: flex-start; padding-right: 32px !important;">
+                            <div class="col-md-8">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-color: #38584E; padding-top: 30px;">
+                            <h1><b>Estrutura</b></h1>
+                            <img src="assets/images/home/icones2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Botão Conheça o Curso -->
+            <div class="row botao" style="padding-top: 65px;">
+                <a href="modulo1/modulo1-intro.html" class="btn btn-sm" id="botaoComecar" role="button" alt="Começar">
+                    <strong>Começar</strong>
+                </a>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer id="rodape">
+            <div class="row-main">
+                <div class="col-md-12 centro">
+                    <img class="img-fluid centro" style="max-width: 80% !important;"
+                        src="assets/images/rodape/rodape.jpg" alt="Rodapé">
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <!-- Arquivos JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
