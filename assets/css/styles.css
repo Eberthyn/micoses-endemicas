@@ -1709,7 +1709,7 @@ input[type="radio"].input-certo:checked::before {
   overflow: auto;
 
   h3 {
-    color: #984e35;
+    color: #0A665C;
   }
 }
 
@@ -2471,7 +2471,7 @@ td {
 
 /* Estilo do Cabeçalho */
 th {
-  background-color: #9c4332;
+  background-color: #0A665C;
   /* Tom marrom avermelhado */
   color: white;
   font-weight: bold;
