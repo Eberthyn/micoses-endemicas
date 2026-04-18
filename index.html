@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Leishmaniose</title>
+    <title>Micoses Endêmicas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
@@ -97,35 +97,242 @@
 </head>
 
 <body>
-    <!-- Toolbar -->
-    <header>
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Curso</h1>
-                <h2><b>Princípios básicos <br> do diagnóstico das </b></h2>
-                <h1>Micoses <br> Endêmicas</h1>
+    <style>
+        /* Estilos base para garantir a fidelidade */
+        .hero-section {
+            background-color: #F1ECE9;
+            font-family: 'Montserrat', Arial, sans-serif;
+            /* Montserrat se aproxima da fonte da imagem */
+            min-height: 100vh;
+        }
 
-                <div class="button">Saiba Mais</div>
+        .content-box {
+            padding: 8% 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-                <div><img src="assets/images/home/icone.png" alt=""></div>
-                <div class="col-md-2">
+        .txt-curso {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #555;
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+
+        .txt-titulo {
+            color: #444;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.1;
+            font-size: 1.5rem;
+        }
+
+        .txt-micoses {
+            color: #0F5E4E;
+            font-size: 5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 30px 0;
+        }
+
+        .btn-saiba-mais {
+            background-color: #A34800;
+            color: white;
+            padding: 10px 50px;
+            /* border-radius: 4px; */
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            width: fit-content;
+
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        /* Ajuste para alinhar os ícones decorativos à direita */
+        .decoracao-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            /* Alinha o conteúdo à direita da coluna */
+            width: 100%;
+            margin-top: -20px;
+            /* Ajuste fino de posição conforme a imagem */
+        }
+
+        .icone-decorativo {
+            width: 140px;
+            /* Ajuste o tamanho conforme necessário */
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .footer-links a {
+            color: #0F5E4E;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* Imagem sangrada (ocupando todo o espaço) */
+        .img-fullscreen {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+
+
+        /* Estilos específicos para a seção Estrutura */
+        .estrutura-section {
+            min-height: 100vh;
+            background-color: #F1ECE9;
+            /* Fundo bege claro */
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+
+        /* Coluna Verde (Esquerda) */
+        .col-titulo {
+            background-color: #0F5E4E;
+            /* Verde escuro idêntico à imagem */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .txt-estrutura {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+        }
+
+        .icone-estrutura {
+            width: 150px;
+            /* Ajuste conforme seu ativo */
+        }
+
+        /* Coluna de Conteúdo (Direita) */
+        .col-conteudo {
+            padding: 5% 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .modulo-item {
+            margin-bottom: 40px;
+        }
+
+        .modulo-titulo {
+            font-weight: 700;
+            color: #444;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .aula-lista {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .aula-link {
+            color: #666;
+            text-decoration: underline;
+            font-size: 1rem;
+            line-height: 1.8;
+            display: block;
+            transition: color 0.2s;
+        }
+
+        .aula-link:hover {
+            color: #0F5E4E;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
+            /* Centraliza os cards na tela */
+            gap: 20px;
+            /* Espaçamento entre os cards */
+            padding: 40px 20px;
+            /* background-color: #F1ECE9; */
+            /* Fundo seguindo o padrão das outras seções */
+            flex-wrap: wrap;
+            /* Garante que quebrem linha em telas pequenas */
+        }
+
+        .info-card {
+            background-color: #A34800;
+            /* Marrom alaranjado da imagem */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            min-width: 280px;
+            border-radius: 2px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            margin-right: 20px;
+        }
+
+        .info-card span {
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: none;
+            /* Mantém como o original */
+        }
+    </style>
+
+    <header class="container-fluid p-0 overflow-hidden">
+        <div class="row g-0">
+
+            <div class="col-md-6 hero-section content-box">
+                <div>
+                    <h1 class="txt-curso">Curso</h1>
+                    <h2 class="txt-titulo">Princípios básicos <br> do diagnóstico das</h2>
+                    <h1 class="txt-micoses">Micoses <br>Endêmicas</h1>
+
+                    <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                </div>
+
+                <div class="decoracao-container">
+                    <img src="assets/images/home/icone.png" class="icone-decorativo" alt="Elementos decorativos">
+                </div>
+
+                <div class="footer-links">
                     <a href="creditos.html">
-                        <i class="fas fa-list"></i>
-                        <b>Créditos</b>
+                        <i class="fas fa-list-ul me-2"></i> Crédito
                     </a>
-                </div>
-                <div class="col-md-2">
                     <a href="referencias.html">
-                        <i class="fas fa-file-alt"></i>
-                        <b>Referências</b>
+                        <i class="fas fa-file-alt me-2"></i> Referência
                     </a>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <img src="assets/images/home/imgCapa.png" class="img-fluid" alt="Capa do curso">
-
+            <div class="col-md-6" style="padding: 0 !important;">
+                <img src="assets/images/home/imgCapa.png" class="img-fullscreen" alt="Capa">
             </div>
+
         </div>
     </header>
 
@@ -133,7 +340,7 @@
         <!-- Apresentação -->
         <div class="col-md-12" id="content">
             <div class="conteudo" style="padding-bottom: 50px !important;">
-                <h1 class="text-center" style="color:  #3A5C51;">APRESENTAÇÃO</h1>
+                <h1 class="text-center" style="color:  #3A5C51;">Apresentação</h1>
 
                 <p>Olá, seja bem-vindo(a) ao curso de<b> Princípios básicos do diagnóstico das micoses endêmicas.</b>
                 </p>
@@ -169,7 +376,57 @@
                 </p>
 
                 <p><b>Bons estudos!</b></p>
+            </div>
 
+
+            <section class="container-fluid p-0 estrutura-section">
+                <div class="row g-0">
+
+                    <div class="col-md-4 col-titulo" style="min-height: 100vh;">
+                        <h2 class="txt-estrutura">Estrutura</h2>
+                        <img src="assets/images/home/icones2.png" class="icone-estrutura" alt="Ícone Estrutura">
+                    </div>
+
+                    <div class="col-md-8 col-conteudo">
+
+                        <div class="modulo-item">
+                            <h3 class="modulo-titulo">Módulo 1: Classificação das micoses endêmicas no Brasil</h3>
+                            <div class="aula-lista">
+                                <a href="modulo1/modulo1-aula1.html" class="aula-link">Aula 1: Micoses superficiais e cutâneas.</a>
+                                <a href="modulo1/modulo1-aula2.html" class="aula-link">Aula 2: Micoses de implantação.</a>
+                                <a href="modulo1/modulo1-aula3.html" class="aula-link">Aula 3: Micoses sistêmicas.</a>
+                                <a href="modulo1/modulo1-aula4.html" class="aula-link">Aula 4: Micoses oportunistas.</a>
+                            </div>
+                        </div>
+
+                        <div class="modulo-item">
+                            <h3 class="modulo-titulo">Módulo 2: Métodos de diagnóstico laboratorial em micologia</h3>
+                            <div class="aula-lista">
+                                <a href="#" class="aula-link">Aula 1: Fase pré-analítica dos métodos de diagnóstico</a>
+                                <a href="#" class="aula-link">Aula 2: Exames micológicos</a>
+                                <a href="#" class="aula-link">Aula 3: Macro e micromorfologia dos principais agentes
+                                    etiológicos das micoses</a>
+                                <a href="#" class="aula-link">Aula 4: Exame histopatológico</a>
+                                <a href="#" class="aula-link">Aula 5: Testes de suscetibilidade a antifúngicos (TSA)</a>
+                                <a href="#" class="aula-link">Aula 6: Exames de imunodiagnóstico</a>
+                            </div>
+                        </div>
+
+                        <div class="modulo-item">
+                            <h3 class="modulo-titulo">Módulo 3: Gestão da qualidade laboratorial e gerenciador de
+                                ambiente laboratorial</h3>
+                            <div class="aula-lista">
+                                <a href="#" class="aula-link">Aula 1: Sistema de Gestão da Qualidade</a>
+                                <a href="#" class="aula-link">Aula 2: Gerenciador de Ambiente Laboratorial (GAL)</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="conteudo">
+                <!-- 
                 <div class="row">
                     <div class="col-md-4" style="background-color: #38584E; padding-top: 30px;">
                         <h1><b>Estrutura</b></h1>
@@ -246,9 +503,28 @@
                             </ul>
                         </div>
                     </div>
+                </div> -->
+
+
+                <div class="info-container">
+                    <div class="info-card">
+                        <i class="fas fa-desktop"></i>
+                        <span>Modalidade <br>Autoinstrucional</span>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="far fa-clock"></i>
+                        <span>Carga Horária: <br>30 horas</span>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-medal"></i>
+                        <span>3 módulos divididos <br>em 9 aulas</span>
+                    </div>
                 </div>
 
-                <h3>Objetivos do curso</h3>
+                <h1 class="text-center" style="color:  #3A5C51;">Objetivos do curso</h1>
+
                 <ul>
                     <li class="icon circle">Apresentar as doenças fúngicas de relevância em Saúde Pública no Brasil e no
                         mundo.</li>
@@ -283,25 +559,37 @@
                         acidentes ou emergências.</li>
                 </ul>
 
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="col-md-4"
-                            style="display: flex; justify-content: flex-end; align-items: flex-start; padding-right: 32px !important;">
-                            <div class="col-md-8">
+            </div>
 
+
+            <section class="container-fluid p-0 estrutura-section">
+                <div class="row g-0">
+
+                    <div class="col-md-8 col-conteudo" style="min-height: 100vh;">
+                        <!-- Video 1 -->
+                        <div class="row video justify-content-center">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video width="560" height="315" class="embed-responsive-item" controls>
+                                    <source src="" type="video/mp4" frameborder="0" allow="encrypted-media"
+                                        allowfullscreen="allowfullscreen" />
+                                </video>
                             </div>
                         </div>
-                        <div class="col-md-4" style="background-color: #38584E; padding-top: 30px;">
-                            <h1><b>Estrutura</b></h1>
-                            <img src="assets/images/home/icones2.png" alt="">
-                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-titulo">
+                        <h2 class="txt-estrutura">Vídeo de <br> abertura</h2>
+                        <img src="assets/images/home/icones2.png" class="icone-estrutura" alt="Ícone Estrutura">
                     </div>
                 </div>
+            </section>
+
+            <div class="conteudo">
 
             </div>
             <!-- Botão Conheça o Curso -->
             <div class="row botao" style="padding-top: 65px;">
-                <a href="modulo1/modulo1-intro.html" class="btn btn-sm" id="botaoComecar" role="button" alt="Começar">
+                <a href="modulo1/modulo1-intro.html" class="btn btn-sm" id="botaoAvancar" role="button" alt="Começar">
                     <strong>Começar</strong>
                 </a>
             </div>
