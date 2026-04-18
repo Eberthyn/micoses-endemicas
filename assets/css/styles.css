@@ -1,23 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 @font-face {
-  font-family: "Prelo Book";
-  src: url(../fonts/Prelo-Book.ttf) format("truetype");
+  font-family: "Prelo";
+  src: url(../fonts/Prelo-Light.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Prelo Bold";
-  src: url(../fonts/Prelo-Bold.ttf) format("truetype");
+  font-family: "Bungee";
+  src: url(../fonts/Bungee-Regular.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "Oleo Script";
-  src: url(../fonts/OleoScript-Regular.ttf) format("truetype");
+  font-family: "Open";
+  src: url(../fonts/Open-Sans-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto_Condensed-Bold.ttf) format("truetype");
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
 }
 
 html {
@@ -27,7 +32,7 @@ html {
 body,
 header,
 footer {
-  font-family: "Prelo Book", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px !important;
   letter-spacing: 1px;
 }
@@ -65,14 +70,14 @@ footer {
   max-width: 600px;
 }
 
-.header h1 {
+header h1 {
   font-size: 48px;
   margin: 0;
   line-height: 1;
-  font-family: "Oleo Script" !important;
+  font-family: "Bungee" !important;
 }
 
-.header h2 {
+header h2 {
   font-size: 24px;
   margin: 10px 0;
   font-style: italic;
@@ -148,7 +153,8 @@ footer {
   align-items: center;
   justify-content: center;
   padding-bottom: 65px;
-  font-family: "Prelo Bold";
+  font-family: "Roboto";
+  font-weight: bold;
 }
 
 .btn-secondary {
@@ -435,7 +441,7 @@ footer {
   margin-left: 0px !important;
   padding: 24px 12px;
   border: 4px dotted #984e35;
-  font-family: "Prelo Book", sans-serif;
+  font-family: "Roboto", sans-serif;
 
   ul li.icon.arrow::before {
     color: #984e35;
@@ -516,14 +522,14 @@ h1 {
   font-weight: bold;
   margin-bottom: 30px;
   margin-top: 50px;
-  font-family: "Prelo Bold";
+  font-family: "Roboto";
 
   /*max-width: 58ch*/
 }
 
 h2 {
   font-size: 24px;
-  font-family: "Prelo Bold";
+  font-family: "Roboto";
   font-weight: bold;
   margin-bottom: 30px;
   margin-top: 50px;
@@ -543,13 +549,13 @@ h3 {
   font-size: 20px;
   color: #0a665c;
   font-weight: bold;
-  font-family: "Prelo Bold";
+  font-family: "Roboto";
   margin-bottom: 30px;
   margin-top: 50px;
 }
 
 b {
-  font-family: "Prelo Bold";
+  font-family: "Roboto Bold";
 }
 
 a {
@@ -569,7 +575,7 @@ p.indice {
   margin-top: 50px;
   color: #aa1c95;
   font-weight: bold;
-  font-family: "Prelo Bold";
+  font-family: "Roboto Bold";
 }
 
 p.tituloLista {
@@ -662,7 +668,7 @@ p.tituloLista {
 }
 
 small {
-  font-family: "Prelo Book";
+  font-family: "Roboto";
 }
 
 /* Smartphone */
@@ -718,7 +724,7 @@ ol li::marker {
 .listaNumerada {
   li::marker {
     font-size: 40px;
-    font-family: "Prelo Bold";
+    font-family: "Roboto Bold";
   }
 
   b {
@@ -1358,7 +1364,7 @@ span.tituloLista,
 span.tituloLista.collapsed {
   font-size: 16px !important;
   margin: 0px;
-  font-family: "Prelo Bold";
+  font-family: "Roboto Bold";
   padding: 22px 14px;
   cursor: pointer;
 }
@@ -1367,14 +1373,14 @@ a.tituloLista {
   font-size: 16px !important;
   padding-top: 22px;
   margin: 0px;
-  font-family: "Prelo Bold";
+  font-family: "Roboto Bold";
   padding-left: 12px;
 }
 
 a.tituloItem,
 span.tituloItem {
   margin: -4px 0 0 0;
-  font-family: "Prelo Book";
+  font-family: "Roboto";
   padding-left: 20px;
 }
 
@@ -2454,7 +2460,7 @@ table {
   /* margin: 40px 0 !important; */
   border-collapse: collapse;
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
 }
 
