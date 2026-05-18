@@ -713,7 +713,7 @@ small {
 
 /* Listas e Ícones */
 ul {
-  padding: 0;
+  /* padding: 0; */
 }
 
 ul li {
@@ -721,7 +721,7 @@ ul li {
 }
 
 ol li::marker {
-  color: #c04caf;
+  color: #0A665C;
   font-weight: 800;
   font-size: 16px;
 }
@@ -733,7 +733,7 @@ ol li::marker {
   }
 
   b {
-    color: #c04caf;
+    color: #0A665C;
   }
 }
 
@@ -2122,7 +2122,7 @@ input[type="radio"].input-certo:checked::before {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   border: 1px solid #707070;
-  background-color: #9d4100;
+  background-color: #9D4100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2509,4 +2509,53 @@ tbody tr:nth-child(even) {
 /* Linhas ímpares brancas */
 tbody tr:nth-child(odd) {
   background-color: #ffffff;
+}
+
+/* Mouse Over / Tooltip */
+.tooltip-trigger {
+  text-decoration: underline;
+  cursor: help;
+  position: relative;
+}
+
+.tooltip-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 320px;
+  background-color: #f3e9dd;
+  border: 2px solid #9d4100;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.15);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .tooltip-box {
+    position: fixed;
+    width: min(320px, 90vw);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%; /* posição vertical fixa na tela */
+  }
+}
+
+.tooltip-box::before {
+  display: block;
+  font-family: "Roboto Bold", sans-serif;
+  font-weight: bold;
+  color: #9d4100;
+  font-size: 13px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.tooltip-trigger:hover .tooltip-box,
+.tooltip-trigger:focus .tooltip-box {
+  display: block;
 }
