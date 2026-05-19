@@ -2501,13 +2501,21 @@ td:first-child {
   width: 30%;
 }
 
-/* Linhas pares com cor bege para efeito zebrado */
+/* Linhas pares com cor bege para efeito zebrado
 tbody tr:nth-child(even) {
   background-color: #f2e8dc;
 }
 
 /* Linhas ímpares brancas */
-tbody tr:nth-child(odd) {
+/* tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+} */
+
+tbody tr.zebra-par {
+  background-color: #f2e8dc;
+}
+
+tbody tr.zebra-impar {
   background-color: #ffffff;
 }
 
