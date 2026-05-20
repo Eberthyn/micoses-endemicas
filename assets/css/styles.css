@@ -2495,11 +2495,16 @@ th {
 }
 
 /* Estilo da primeira coluna (Títulos) */
-td:first-child {
+td:nth-child {
   font-weight: bold;
   background-color: inherit;
   width: 30%;
 }
+/* 
+tbody td:first-child,
+tbody td[rowspan] {
+  font-weight: bold;
+} */
 
 /* Linhas pares com cor bege para efeito zebrado
 tbody tr:nth-child(even) {
